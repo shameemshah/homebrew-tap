@@ -1,6 +1,6 @@
 cask "kitebar" do
   version "2.0.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "3c9684bedc449ba40f13fbda6fd8bd24d6eb90a93e3fdcf0da184e6c12b75808"
 
   url "https://github.com/shameemshah/kitebar/releases/download/v#{version}/KiteBar-#{version}.dmg"
   name "KiteBar"
