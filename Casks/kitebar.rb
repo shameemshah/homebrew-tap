@@ -19,9 +19,10 @@ cask "kitebar" do
   ]
 
   caveats <<~EOS
-    KiteBar is not notarized (no Apple Developer subscription). If you did
-    not install with --no-quarantine, the first launch needs:
-      right-click KiteBar.app -> Open -> Open
-    or: xattr -d com.apple.quarantine /Applications/KiteBar.app
+    KiteBar is not notarized (no Apple Developer subscription), so macOS
+    will refuse to launch it ("damaged") until you clear the quarantine
+    flag. Before first launch, run:
+
+      xattr -rd com.apple.quarantine /Applications/KiteBar.app
   EOS
 end
